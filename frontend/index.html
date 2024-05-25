@@ -7,6 +7,29 @@
         <title>Recipes</title>
     </head>
     <body>
+        <main>
+            <header>
+                <h1>Polish Food Recipes</h1>
+            </header>
+            <form>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" /><br />
+                <label for="ingredients">Ingredients:</label>
+                <input type="text" id="ingredients" name="ingredients" /><br />
+                <label for="instructions">Instructions:</label>
+                <input
+                    type="text"
+                    id="instructions"
+                    name="instructions"
+                /><br />
+                <label for="image">Image url:</label>
+                <input type="text" id="image" name="image" />
+                <div class="error"></div>
+                <br />
+                <button type="submit" id="btn">Add Recipe</button>
+            </form>
+            <div class="recipes"></div>
+        </main>
         <script type="module" src="./src/init.js"></script>
     </body>
 </html>
